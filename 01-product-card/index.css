@@ -1,0 +1,162 @@
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 40px;
+    background-color: #E5E5E5;
+    height: 694px;
+    width: 100%;
+}
+
+.title {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 380px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-right: 20px;
+    box-shadow: 1px 4px 14px 3px #acaeb4;
+}
+
+.card__image {
+    height: 214px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__text {
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.card__heading {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0 0 16px 0;
+}
+
+.card__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card__button {
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    margin: 24px auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card__button_default {
+    border: 2px solid #42940F;
+    color: #42940F;
+    background-color: #ffffff;
+}
+
+.card__button_default:hover {
+    color: #ffffff;
+    background-color: #42940F;
+    cursor: pointer;
+}
+
+.card__button_default:active {
+    color: #ffffff;
+    background-color: #1F5200;
+    border-color: #1F5200;
+    cursor: pointer;
+}
+
+.card__button_disabled {
+    border: 1px solid #4E4E4E;
+    background-color: #4E4E4E;
+    color: #ffffff;
+}
+
+.card__note_new,
+.card__note_low-stock {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4px 16px;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.card__note_new {
+    background-color: #FDCFF3;
+    top: 16px;
+    left: 16px;
+}
+
+.card__note_low-stock {
+    background-color: #FFCF56;
+    top: 16px;
+    left: 142px;
+}
+
+@media all and (max-width: 1000px) {
+    main {
+        padding: 40px;
+        background-color: #E5E5E5;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card__button_default:hover {
+        color: #42940F;
+        background-color: #ffffff;
+        cursor: auto;
+    }
+
+    .card__button_default:active {
+        border: 2px solid #42940F;
+        color: #42940F;
+        background-color: #ffffff;
+        cursor: auto;
+    }
+}
+
+
+
