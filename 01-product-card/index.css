@@ -1,17 +1,16 @@
-
 body {
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
 main {
-    padding: 40px;
+    padding: 40px 0;
     background-color: #E5E5E5;
     height: 694px;
     width: 100%;
 }
 
 .title {
-    margin: 0 auto;
     padding-bottom: 40px;
     text-align: center;
     font-size: 48px;
@@ -37,6 +36,10 @@ main {
     border-radius: 12px;
     margin-right: 20px;
     box-shadow: 1px 4px 14px 3px #acaeb4;
+}
+
+.card:last-of-type {
+    margin: 0;
 }
 
 .card__image {
@@ -128,23 +131,26 @@ main {
 
 @media all and (max-width: 1000px) {
     main {
-        padding: 40px;
-        background-color: #E5E5E5;
-        margin: 0 auto;
+        padding: 15px;
         height: 100%;
+    }
+    
+    .title {
+        font-size: 35px;
+        padding-bottom: 20px;
     }
 
     .content {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     
     .card {
-        margin-bottom: 20px;
+        margin: 0 0 20px;
     }
 
-    .card__button_default:hover {
+    .card__button_default:hover,
+    .card__button_default:active {
         color: #42940F;
         background-color: #ffffff;
         cursor: auto;
@@ -152,9 +158,6 @@ main {
 
     .card__button_default:active {
         border: 2px solid #42940F;
-        color: #42940F;
-        background-color: #ffffff;
-        cursor: auto;
     }
 }
 
